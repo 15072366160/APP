@@ -58,6 +58,7 @@
 		DAD03FDF218C2AC500B92B8B /* StartUpVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD03FDE218C2AC500B92B8B /* StartUpVC.m */; };
 		DAD03FE2218C3E4A00B92B8B /* UIDevice+GY.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD03FE1218C3E4A00B92B8B /* UIDevice+GY.m */; };
 		DAD03FE6218C434800B92B8B /* CrashManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD03FE4218C434800B92B8B /* CrashManager.m */; };
+		DAD03FE9218C5F8000B92B8B /* UIImage+GY.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD03FE8218C5F8000B92B8B /* UIImage+GY.m */; };
 		F7B791BFBE40E8B93E0AAF03 /* libPods-APP.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 72565A22A1742BFB9BCB9594 /* libPods-APP.a */; };
 /* End PBXBuildFile section */
 
@@ -175,6 +176,8 @@
 		DAD03FE1218C3E4A00B92B8B /* UIDevice+GY.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+GY.m"; sourceTree = "<group>"; };
 		DAD03FE4218C434800B92B8B /* CrashManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrashManager.m; sourceTree = "<group>"; };
 		DAD03FE5218C434800B92B8B /* CrashManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrashManager.h; sourceTree = "<group>"; };
+		DAD03FE7218C5F8000B92B8B /* UIImage+GY.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+GY.h"; sourceTree = "<group>"; };
+		DAD03FE8218C5F8000B92B8B /* UIImage+GY.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+GY.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -503,6 +506,8 @@
 				DAD03FCE218C289400B92B8B /* UITextView+ZWPlaceHolder.m */,
 				DAD03FC4218C289300B92B8B /* UIView+GY.h */,
 				DAD03FC0218C289300B92B8B /* UIView+GY.m */,
+				DAD03FE7218C5F8000B92B8B /* UIImage+GY.h */,
+				DAD03FE8218C5F8000B92B8B /* UIImage+GY.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -688,6 +693,7 @@
 				DAD03F3F218BFA3D00B92B8B /* BaTabBarController.m in Sources */,
 				DAD03F21218BEFF800B92B8B /* AppDelegate.m in Sources */,
 				DAD03FD3218C289400B92B8B /* UIBarButtonItem+GY.m in Sources */,
+				DAD03FE9218C5F8000B92B8B /* UIImage+GY.m in Sources */,
 				DAD03F5B218C0A2E00B92B8B /* GYHUD.m in Sources */,
 				DAD03F7F218C0A8A00B92B8B /* UIAlertController+Extend.m in Sources */,
 				DAD03FBA218C278200B92B8B /* GYCommon.m in Sources */,

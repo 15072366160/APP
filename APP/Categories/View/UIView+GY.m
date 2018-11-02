@@ -211,23 +211,28 @@
     self.layer.borderColor = color.CGColor;
 }
 
-- (void)addColorWithStarColor:(UIColor *)starColor endColor:(UIColor *)endColor{
-    CAGradientLayer *layer = [CAGradientLayer layer];
-//        layer.startPoint = CGPointMake(0, 0);//（0，0）表示从左上角开始变化。默认值是(0.5,0.0)表示从x轴为中间，y为顶端的开始变化
-//        layer.endPoint = CGPointMake(1, 1);//（1，1）表示到右下角变化结束。默认值是(0.5,1.0)  表示从x轴为中间，y为低端的结束变化
-    layer.colors = [NSArray arrayWithObjects:(id)starColor.CGColor,(id)endColor.CGColor, nil];
-    layer.locations = @[@0.5f,@1.0f];//渐变颜色的区间分布，locations的数组长度和color一致，这个值一般不用管它，默认是nil，会平均分布
-    layer.frame = self.bounds;
-    [self.layer insertSublayer:layer atIndex:0];
+// 斜下
+- (void)gradualOblique:(UIColor *)startColor endColor:(UIColor *)endColor{
+    [self gradual:CGPointMake(0, 0) endPoint:CGPointMake(1.0, 1.0) startColor:startColor endColor:endColor];
+}
+
+// 竖向
+- (void)gradualVertical:(UIColor *)startColor endColor:(UIColor *)endColor{
+    [self gradual:CGPointMake(0.0, 0.5) endPoint:CGPointMake(1.0, 0.5) startColor:startColor endColor:endColor];
 }
 
 // 横向
-- (void)addHLayerWithBColor:(UIColor *)bColor eColor:(UIColor *)eColor{
+- (void)gradualHorizontal:(UIColor *)startColor endColor:(UIColor *)endColor{
+    [self gradual:CGPointMake(0.5,0.0) endPoint:CGPointMake(0.5,1.0) startColor:startColor endColor:endColor];
+}
+
+- (void)gradual:(CGPoint)startPoint endPoint:(CGPoint)endPoint startColor:(UIColor *)startColor endColor:(UIColor *)endColor{
+    
     CAGradientLayer *layer = [CAGradientLayer layer];
-    layer.startPoint = CGPointMake(0, 0);//（0，0）表示从左上角开始变化。默认值是(0.5,0.0)表示从x轴为中间，y为顶端的开始变化
-    layer.endPoint = CGPointMake(1, 1);//（1，1）表示到右下角变化结束。默认值是(0.5,1.0)  表示从x轴为中间，y为低端的结束变化
-    layer.colors = [NSArray arrayWithObjects:(id)bColor.CGColor,(id)eColor.CGColor, nil];
-//    layer.locations = @[@0.5f,@1.0f];//渐变颜色的区间分布，locations的数组长度和color一致，这个值一般不用管它，默认是nil，会平均分布
+    layer.startPoint = startPoint;//（0，0）表示从左上角开始变化。默认值是(0.5,0.0)表示从x轴为中间，y为顶端的开始变化
+    layer.endPoint = endPoint;//（1，1）表示到右下角变化结束。默认值是(0.5,1.0)  表示从x轴为中间，y为低端的结束变化
+    layer.colors = [NSArray arrayWithObjects:(id)startColor.CGColor,(id)endColor.CGColor, nil];
+    //    layer.locations = @[@0.5f,@1.0f];//渐变颜色的区间分布，locations的数组长度和color一致，这个值一般不用管它，默认是nil，会平均分布
     layer.frame = self.bounds;
     [self.layer insertSublayer:layer atIndex:0];
 }

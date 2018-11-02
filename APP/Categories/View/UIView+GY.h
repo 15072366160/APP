@@ -142,14 +142,36 @@
  加边框
  **/
 - (void)borW:(CGFloat)width color:(UIColor *)color;
+
 /**
- 渐变色
- **/
-- (void)addColorWithStarColor:(UIColor *)starColor endColor:(UIColor *)endColor;
+ 斜下
+ @param startColor 开始颜色
+ @param endColor 结束颜色
+ */
+- (void)gradualOblique:(UIColor *)startColor endColor:(UIColor *)endColor;
+
 /**
- 横向渐变色
- **/
-- (void)addHLayerWithBColor:(UIColor *)bColor eColor:(UIColor *)eColor;
+ 竖向
+ @param startColor 开始颜色
+ @param endColor 结束颜色
+ */
+- (void)gradualVertical:(UIColor *)startColor endColor:(UIColor *)endColor;
+
+/**
+ 横向
+ @param startColor 开始颜色
+ @param endColor 结束颜色
+ */
+- (void)gradualHorizontal:(UIColor *)startColor endColor:(UIColor *)endColor;
+
+/**
+ 设置渐变色
+ @param startPoint 开始位置 （0，0）表示从左上角开始变化。默认值是(0.5,0.0)表示从x轴为中间，y为顶端的开始变化
+ @param endPoint 结束位置（1，1）表示到右下角变化结束。默认值是(0.5,1.0)  表示从x轴为中间，y为低端的结束变化
+ @param startColor 开始颜色
+ @param endColor 结束颜色
+ */
+- (void)gradual:(CGPoint)startPoint endPoint:(CGPoint)endPoint startColor:(UIColor *)startColor endColor:(UIColor *)endColor;
 
 /**
  四周添加阴影

@@ -34,5 +34,7 @@
 
 #import "UIDevice+GY.h"
 
+#import "UIImage+GY.h"
+
 
 #endif /* HeaderGategory_h */
