@@ -1,0 +1,1 @@
+../../../JYHHHorizontalPagingView/HHHorizontalPagingView/JYSegmentViewProtocol.h

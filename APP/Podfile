@@ -1,0 +1,30 @@
+platform :ios,’9.0’
+target 'APP' do
+
+pod 'AFNetworking'
+pod ‘Masonry’
+pod ‘MJRefresh’
+pod ‘MJExtension’
+pod ‘SDWebImage’
+pod ‘SVProgressHUD’
+pod ‘Bugly’
+pod ‘FMDB’
+pod ‘JKCategories’, ‘~> 1.5’
+pod ‘Colours’
+pod ‘YYText’
+pod 'Popover.OC'
+pod 'SDCycleScrollView'
+pod 'QBPopupMenu'
+pod 'WMPageController'
+pod 'IQKeyboardManager'
+pod 'SDAutoLayout'
+pod 'HJTabViewController'
+pod 'JPush'
+pod 'HXWeiboPhotoPicker'
+pod 'KSPhotoBrowser'
+pod 'JYHHHorizontalPagingView'
+pod 'ZFPlayer'
+pod 'lottie-ios'
+
+end
+
