@@ -23,12 +23,12 @@
 #import "QBPopupMenu.h"
 
 // Header
+#import "HeaderGategory.h"
 #import "HeaderDefine.h"
 #import "HeaderCode.h"
 #import "HeaderColor.h"
 #import "HeaderEnum.h"
 #import "HeaderConst.h"
-#import "HeaderGategory.h"
 #import "HeaderUI.h"
 #import "HeaderBlock.h"
 
@@ -37,5 +37,6 @@
 #import "GYNetworking+API.h"
 #import "GYPopverVC.h"
 #import "GYScreen.h"
+#import "FMDBManager.h"
 
 #endif /* PrefixHeader_pch */

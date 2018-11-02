@@ -32,5 +32,7 @@
 
 #import "NSMutableDictionary+Gategary.h"
 
+#import "UIDevice+GY.h"
+
 
 #endif /* HeaderGategory_h */

@@ -197,11 +197,13 @@
 }
 
 - (void)cor{
-    self.layer.cornerRadius = self.frame.size.height / 2.0;
+    self.layer.cornerRadius = self.bounds.size.height / 2.0;
+    self.layer.masksToBounds = true;
 }
 
 - (void)corRadius:(CGFloat)radius{
     self.layer.cornerRadius = radius;
+    self.layer.masksToBounds = true;
 }
 
 - (void)borW:(CGFloat)width color:(UIColor *)color{
@@ -246,7 +248,6 @@
     self.layer.mask = masklayer;
     
 }
-
 
 @end
 

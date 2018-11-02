@@ -11,19 +11,32 @@
 #define HeaderDefine_h
 
 // 设备信息
-#define CURRENTDEVICE            [UIDevice currentDevice]
-//手机系统版本
-#define DEV_SYSTEM_VERSION       [CURRENTDEVICE systemVersion] floatValue]
-//手机序列号
-#define IDENTIFIERNUMBER         [CURRENTDEVICE uniqueIdentifier]
-//手机别名： 用户定义的名称
-#define DEV_ALIAS                [CURRENTDEVICE name]
-//设备名称
-#define DEV_NAME                 [CURRENTDEVICE systemName]
-//手机型号
-#define DEV_MODEL                [CURRENTDEVICE model]
-//地方型号  （国际化区域名称）
-#define DEV_LOCALIZE_MODEL       [CURRENTDEVICE localizedModel]
+#define DEV                      [UIDevice currentDevice]
+// 手机系统版本
+#define DEV_SYSTEM_VERSION       [DEV systemVersion] floatValue]
+// 手机序列号
+#define IDENTIFIERNUMBER         [DEV uniqueIdentifier]
+// 手机别名： 用户定义的名称
+#define DEV_ALIAS                [DEV name]
+// 设备名称
+#define DEV_NAME                 [DEV systemName]
+// 手机型号
+#define DEV_MODEL                [DEV model]
+// 地方型号  （国际化区域名称）
+#define DEV_LOCALIZE_MODEL       [DEV localizedModel]
+// 设备UUID
+#define DEV_UUID                 [DEV identifierForVendor].UUIDString
+// 设备型号名称
+#define DEV_MODELNAME            [UIDevice modelName]
+// 设备类型
+#define DEV_BRAND                [UIDevice brand]
+// 设备IDFV
+#define DEV_IDFV                 [DEV identifierForVendor].UUIDString
+// 设备Sn
+#define Device_Sn                [DEV identifierForVendor].UUIDString
+// 设备IDFA
+#define DEV_IDFA                 [[[ASIdentifierManager sharedManager] advertisingIdentifier] UUIDString]
+
 
 #define IS_iOS7                  @available(iOS 7.0, *)
 #define IS_iOS8                  @available(iOS 8.0, *)
