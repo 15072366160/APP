@@ -175,7 +175,7 @@ static NSInteger const MaxRows  = 10;
 }
 
 - (void)dealloc{
-    GYLog_delloc(@"GYPopverVC");
+    GYLog_delloc(self);
 }
 
 @end

@@ -58,30 +58,30 @@ PODS:
   - ZFPlayer/Core (3.1.6)
 
 DEPENDENCIES:
-  - AFNetworking
-  - Bugly
-  - Colours
-  - FMDB
-  - HJTabViewController
-  - HXWeiboPhotoPicker
-  - IQKeyboardManager
-  - JKCategories (~> 1.5)
-  - JPush
-  - JYHHHorizontalPagingView
-  - KSPhotoBrowser
-  - lottie-ios
-  - Masonry
-  - MJExtension
-  - MJRefresh
-  - Popover.OC
-  - QBPopupMenu
-  - SDAutoLayout
-  - SDCycleScrollView
-  - SDWebImage
-  - SVProgressHUD
-  - WMPageController
-  - YYText
-  - ZFPlayer
+  - AFNetworking (~> 3.2.1)
+  - Bugly (~> 2.5.0)
+  - Colours (~> 5.13.0)
+  - FMDB (~> 2.7.2)
+  - HJTabViewController (~> 1.0.6)
+  - HXWeiboPhotoPicker (~> 2.1.5)
+  - IQKeyboardManager (~> 6.1.1)
+  - JKCategories (~> 1.7)
+  - JPush (~> 3.1.0)
+  - JYHHHorizontalPagingView (~> 1.2.1)
+  - KSPhotoBrowser (~> 0.2.3)
+  - lottie-ios (~> 2.5.0)
+  - Masonry (~> 1.1.0)
+  - MJExtension (~> 3.0.15.1)
+  - MJRefresh (~> 3.1.15.6)
+  - Popover.OC (~> 2.2)
+  - QBPopupMenu (~> 2.0)
+  - SDAutoLayout (~> 2.2.1)
+  - SDCycleScrollView (~> 1.75)
+  - SDWebImage (~> 4.4.2)
+  - SVProgressHUD (~> 2.2.5)
+  - WMPageController (~> 2.5.2)
+  - YYText (~> 1.0.7)
+  - ZFPlayer (~> 3.1.6)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -140,6 +140,6 @@ SPEC CHECKSUMS:
   YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
   ZFPlayer: bac23889b25e83fd3644ec40c8e7e9622e331ecb
 
-PODFILE CHECKSUM: 6b3ffbe38e176496bfa162d45a9f55d2c5376256
+PODFILE CHECKSUM: e3fa63c38f79b4464cf472fe722cd0e5809a3213
 
 COCOAPODS: 1.5.3

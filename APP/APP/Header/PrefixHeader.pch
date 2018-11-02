@@ -36,5 +36,6 @@
 #import "GYHUD.h"
 #import "GYNetworking+API.h"
 #import "GYPopverVC.h"
+#import "GYScreen.h"
 
 #endif /* PrefixHeader_pch */

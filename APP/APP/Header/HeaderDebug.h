@@ -18,7 +18,7 @@
 // 处于开发阶段
 
 #define GYLog(...)                NSLog(__VA_ARGS__)
-#define GYLog_delloc(...)         NSLog(@"%@被销毁",__VA_ARGS__)
+#define GYLog_delloc(obj)         NSLog(@"%@被销毁",NSStringFromClass([obj class]))
 
 #else
 // 处于发布阶段
