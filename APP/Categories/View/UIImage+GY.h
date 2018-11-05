@@ -12,6 +12,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface UIImage (GY)
 
++ (UIImage *)imageGradual:(CGPoint)startPoint endPoint:(CGPoint)endPoint startColor:(UIColor *)startColor endColor:(UIColor *)endColor size:(CGSize)size;
+
 @end
 
 NS_ASSUME_NONNULL_END
