@@ -10,8 +10,8 @@
 #define HeaderConst_h
 
 // 微信
-static NSString *const AppID = @"wx1f69eae7d427081c";
-static NSString *const AppSecret = @"0445f5d2a6a5c2fe98134cd3e1b86ed2";
+static NSString *const AppID = @"";
+static NSString *const AppSecret = @"";
 
 // WX_ACCESS_TOKEN
 static NSString  *const WX_ACCESS_TOKEN         = @"access_token";
