@@ -11,11 +11,6 @@
 #import "AFHTTPSessionManager.h"
 #import "GYAPIHeader.h"
 
-typedef NS_ENUM(NSUInteger) {
-    NetModeGET,
-    NetModePOST,
-}NetMode;
-
 static NSString *const AESKEY   = @"xj4kYuqgBsvmUZlI";
 static NSString *const SIGNSALT = @"iXPQmHzJDamYJqag";
 
@@ -51,6 +46,36 @@ static NSString *const SIGNSALT = @"iXPQmHzJDamYJqag";
         [GYHUD _dismiss];
         result(isSuccess,data,error);
     }];
+}
+
++ (void)requestMode:(NetMode)mode header:(NSDictionary *)header url:(NSString *)url params:(NSDictionary *)params success:(void (^)(NSURLSessionDataTask * _Nonnull task, id _Nullable data))success failure:(void (^)(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error))failure{
+    
+    //开始请求数据
+    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+
+    AFHTTPRequestSerializer *requset = [AFHTTPRequestSerializer serializer];
+    requset.stringEncoding = NSUTF8StringEncoding;
+    requset.timeoutInterval = 5.0;
+    for (NSString *key in header.allKeys) {
+        [requset setValue:header[key] forHTTPHeaderField:key];
+    }
+    manager.requestSerializer = requset;
+    
+    AFJSONResponseSerializer *response = [AFJSONResponseSerializer serializer];
+    response.acceptableContentTypes = [NSSet setWithObjects:@"application/json", @"text/html", @"image/jpeg", @"image/png", @"application/octet-stream", @"text/json",@"text/plain", @"text/javascript", nil];
+    manager.responseSerializer = response;
+    
+    if ([url jk_isContainChinese]) {
+        url = [url stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]];
+    }
+    GYLog(@"%@", url);
+    GYLog(@"%@", params);
+    
+    if (mode == NetModeGET) {
+        [manager GET:url parameters:params progress:nil success:success failure:failure];
+    } else {
+        [manager POST:url parameters:params progress:nil success:success failure:failure];
+    }
 }
 
 + (void)requestMode:(NetMode)mode url:(NSString *)url params:(NSDictionary *)params result:(ResultBlock)result{

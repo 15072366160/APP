@@ -35,7 +35,7 @@
     
     self.IDNumName.text = _IDInfo.name;
     
-    [self addLeftItemWithObj:[UIImage imageNamed:BackIMG_Gray]];
+    [self addLeftItemWithObj:[UIImage imageNamed:@""]];
 }
 
 - (void)didReceiveMemoryWarning {

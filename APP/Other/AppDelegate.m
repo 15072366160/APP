@@ -16,10 +16,6 @@
 
 @end
 
-// 微信
-static NSString *const AppID = @"";
-static NSString *const AppSecret = @"";
-
 @implementation AppDelegate
 
 
@@ -71,7 +67,27 @@ static NSString *const AppSecret = @"";
 }
 
 -(void) onResp:(BaseResp*)resp{
-    
+     if ([resp isKindOfClass:[SendAuthResp class]]) {
+         
+         SendAuthResp *temp = (SendAuthResp *)resp;
+         NSMutableDictionary *dict = [NSMutableDictionary dictionary];
+             [dict addValue:AppID key:@"appid"];
+             [dict addValue:AppSecret key:@"secret"];
+             [dict addValue:temp.code key:@"code"];
+             [dict addValue:@"authorization_code" key:@"grant_type"];
+         [GYNetworking requestMode:NetModeGET header:nil url:@"https://api.weixin.qq.com/sns/oauth2/access_token" params:dict success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable data) {
+             
+             GYLog(@"请求access的response = %@", data);
+             NSDictionary *dict = (NSDictionary *)data;
+             [NSUserDefaults addValue:dict[WX_ACCESS_TOKEN] key:WX_ACCESS_TOKEN];
+             [NSUserDefaults addValue:dict[WX_OPEN_ID] key:WX_OPEN_ID];
+             [NSUserDefaults addValue:dict[WX_REFRESH_TOKEN] key:WX_REFRESH_TOKEN];
+
+             [GYNOTI postNotificationName:NOTI_WX_LOGIN object:nil];
+         } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+             [GYHUD _showErrorWithStatus:@"网络未连接，请检查网络！"];
+         }];
+     }
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

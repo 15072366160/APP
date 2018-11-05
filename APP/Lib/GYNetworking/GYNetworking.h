@@ -12,7 +12,23 @@
 
 typedef void(^ResultBlock)(BOOL isSuccess, id data, GYAPIError *error);
 
+typedef NS_ENUM(NSUInteger) {
+    NetModeGET,
+    NetModePOST,
+}NetMode;
+
 @interface GYNetworking : NSObject
+
+
+/**
+ 一般请求
+ @param mode 请求方式 GET POST
+ @param url 请求链接
+ @param params 请求参数
+ @param success 请求成功
+ @param failure 请求失败
+ */
++ (void)requestMode:(NetMode)mode header:(NSDictionary *)header url:(NSString *)url params:(NSDictionary *)params success:(void (^)(NSURLSessionDataTask * _Nonnull task, id _Nullable data))success failure:(void (^)(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error))failure;
 
 /**
  GET 请求

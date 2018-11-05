@@ -37,7 +37,7 @@
 #define CurrentVersion [[[[NSBundle mainBundle] infoDictionary] objectForKey:(NSString *)kCFBundleVersionKey] substringToIndex:([[[[NSBundle mainBundle] infoDictionary] objectForKey:(NSString *)kCFBundleVersionKey] length]-5)]
 
 //获取通知中心
-#define CCNotificationCenter [NSNotificationCenter defaultCenter]
+#define GYNOTI [NSNotificationCenter defaultCenter]
 
 
 /**
