@@ -8,11 +8,12 @@
 
 #import "MainVC.h"
 
+#import "WechatAuthSDK.h"
+#import "WXApi.h"
+#import "WXApiObject.h"
+
 @interface MainVC ()
 
-{
-    UIImageView *_gradualView;
-}
 
 @end
 
@@ -21,31 +22,33 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-//    _gradualView = [[UIImageView alloc] init];
-//    _gradualView.image = [UIImage imageGradual:CGPointMake(0, 0) endPoint:CGPointMake(1, 1) startColor:HEX_COLOR(@"fd1d1d") endColor:HEX_COLOR(@"fcb045") size:CGSizeMake(300, 300)];
-//    [self.view addSubview:_gradualView];
-//    [_gradualView mas_makeConstraints:^(MASConstraintMaker *make) {
-//        make.width.height.mas_equalTo(300);
-//        make.centerX.mas_equalTo(self.view.mas_centerX);
-//        make.centerY.mas_equalTo(self.view.mas_centerY);
-//    }];
+    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
+    [btn setTitle:@"登录" forState:UIControlStateNormal];
+    UIImage *image = [UIImage imageGradualVertical:HEX_COLOR(@"f12711") endColor:HEX_COLOR(@"f5af19") size:CGSizeMake(50, 200)];
+    [btn setBackgroundImage:image forState:UIControlStateNormal];
+    [btn addTarget:self action:@selector(login) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:btn];
+    [btn mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.centerX.mas_equalTo(self.view.mas_centerX);
+        make.centerY.mas_equalTo(self.view.mas_centerY);
+        make.width.mas_equalTo(200);
+        make.height.mas_equalTo(50);
+    }];
     
-//    self.navigationController.navigationBar.translucent = true;
-//    [self.navigationController.navigationBar gradualVertical:HEX_COLOR(@"FF416C") endColor:HEX_COLOR(@"FF4B2B")];
-    
-    
-    UIImage *image = [UIImage imageGradual:CGPointMake(0, 0) endPoint:CGPointMake(1, 1) startColor:HEX_COLOR(@"fd1d1d") endColor:HEX_COLOR(@"fcb045") size:CGSizeMake(SCREEN_WIDTH, [GYScreen shared].navBarH)];
-    [self.navigationController.navigationBar setBackgroundImage:image forBarMetrics:UIBarMetricsDefault];
-    self.navigationController.navigationBar.shadowImage = [UIImage jk_imageWithColor:CLEAR_COLOR];
-    
-    self.navigationController.navigationBar.barStyle = UIBarStyleBlack;
 }
 
-//- (void)viewDidLayoutSubviews{
-//    [super viewDidLayoutSubviews];
-//
-//
-//    [_gradualView gradualVertical:HEX_COLOR(@"fd1d1d") endColor:HEX_COLOR(@"fcb045")];
-//}
+- (void)login{
+    
+    if ([WXApi isWXAppInstalled] == false) {
+        [GYHUD _showErrorWithStatus:@"未安装微信，请先安装微信！"];
+        return;
+    }
+    //构造SendAuthReq结构体
+    SendAuthReq* req = [[SendAuthReq alloc] init];
+    req.scope = @"snsapi_userinfo";
+    req.state = @"123";
+    //第三方向微信终端发送一个SendAuthReq消息结构
+    [WXApi sendReq:req];
+}
 
 @end

@@ -25,6 +25,7 @@ pod 'KSPhotoBrowser', ‘~> 0.2.3’
 pod 'JYHHHorizontalPagingView', ‘~> 1.2.1’
 pod 'ZFPlayer', ‘~> 3.1.6’
 pod 'lottie-ios', ‘~> 2.5.0’
+pod 'WechatOpenSDK', '~> 1.8.2'
 
 end
 

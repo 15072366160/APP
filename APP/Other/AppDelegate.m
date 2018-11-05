@@ -9,10 +9,16 @@
 #import "AppDelegate.h"
 #import "BaTabBarController.h"
 
+// 微信
+#import "WXApi.h"
 
-@interface AppDelegate ()
+@interface AppDelegate ()<WXApiDelegate>
 
 @end
+
+// 微信
+static NSString *const AppID = @"";
+static NSString *const AppSecret = @"";
 
 @implementation AppDelegate
 
@@ -21,6 +27,14 @@
     
     // Window Root ViewController
     [self makeRootController];
+    
+    // 设置HUD
+    [GYHUD setDefaultStyle:SVProgressHUDStyleDark];
+    [GYHUD setDefaultMaskType:SVProgressHUDMaskTypeClear];
+    [GYHUD setDefaultAnimationType:SVProgressHUDAnimationTypeNative];
+    
+    // 微信注册
+    [WXApi registerApp:AppID];
     
     return YES;
 }
@@ -35,6 +49,30 @@
     self.window.rootViewController = tab;
 }
 
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation{
+    
+    if ([url.scheme isEqualToString:AppID]) {
+        return [WXApi handleOpenURL:url delegate:self];
+    }
+    return true;
+}
+
+- (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url{
+    
+    if ([url.scheme isEqualToString:AppID]) {
+        return [WXApi handleOpenURL:url delegate:self];
+    }
+    
+    return true;
+}
+
+-(void) onReq:(BaseReq*)req{
+    
+}
+
+-(void) onResp:(BaseResp*)resp{
+    
+}
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

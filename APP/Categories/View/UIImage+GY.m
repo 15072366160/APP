@@ -10,6 +10,21 @@
 
 @implementation UIImage (GY)
 
+// 斜下
++ (UIImage *)imageGradualOblique:(UIColor *)startColor endColor:(UIColor *)endColor size:(CGSize)size{
+    return [self imageGradual:CGPointMake(0, 0) endPoint:CGPointMake(1.0, 1.0) startColor:startColor endColor:endColor size:size];
+}
+
+// 竖向
++ (UIImage *)imageGradualVertical:(UIColor *)startColor endColor:(UIColor *)endColor size:(CGSize)size{
+    return [self imageGradual:CGPointMake(0.0, 0.5) endPoint:CGPointMake(1.0, 0.5) startColor:startColor endColor:endColor size:size];
+}
+
+// 横向
++ (UIImage *)imageGradualHorizontal:(UIColor *)startColor endColor:(UIColor *)endColor size:(CGSize)size{
+    return [self imageGradual:CGPointMake(0.5,0.0) endPoint:CGPointMake(0.5,1.0) startColor:startColor endColor:endColor size:size];
+}
+
 + (UIImage *)imageGradual:(CGPoint)startPoint endPoint:(CGPoint)endPoint startColor:(UIColor *)startColor endColor:(UIColor *)endColor size:(CGSize)size{
     
     CAGradientLayer *layer = [CAGradientLayer layer];
