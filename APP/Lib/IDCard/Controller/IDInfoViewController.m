@@ -51,7 +51,7 @@
 #pragma mark - 正确，下一步
 - (IBAction)nextStep:(UIButton *)sender {
     
-    WEAKSELF;
+//    WEAKSELF;
 #warning 认证
 //    [Networking updataUserInfoWithNick:nil sign:nil sex:nil birthday:nil realName:self.IDInfo.name cardNum:self.IDInfo.num citycode:nil adcode:nil cityName:nil center:nil cityType:nil skill:nil userIcon:nil cardFront:nil cardCon:nil hand:nil qq:nil weixin:nil weibo:nil result:^(id data, GYError *error, BOOL isSuccess) {
 //        if (isSuccess) {

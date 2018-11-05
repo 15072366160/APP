@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BC0B32ADC2B964E507DED984 /* libPods-APP.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 36CA8C6F4D523096668D4CEC /* libPods-APP.a */; };
+		DA02C5B621904C92006B7643 /* MyVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DA02C5B521904C92006B7643 /* MyVC.m */; };
+		DA02C5B921904FE3006B7643 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA02C5B821904FE3006B7643 /* File.swift */; };
 		DAD03F21218BEFF800B92B8B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD03F20218BEFF800B92B8B /* AppDelegate.m */; };
 		DAD03F24218BEFF800B92B8B /* MainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD03F23218BEFF800B92B8B /* MainVC.m */; };
 		DAD03F29218BEFF900B92B8B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAD03F28218BEFF900B92B8B /* Assets.xcassets */; };
@@ -59,13 +62,16 @@
 		DAD03FE2218C3E4A00B92B8B /* UIDevice+GY.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD03FE1218C3E4A00B92B8B /* UIDevice+GY.m */; };
 		DAD03FE6218C434800B92B8B /* CrashManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD03FE4218C434800B92B8B /* CrashManager.m */; };
 		DAD03FE9218C5F8000B92B8B /* UIImage+GY.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD03FE8218C5F8000B92B8B /* UIImage+GY.m */; };
-		F7B791BFBE40E8B93E0AAF03 /* libPods-APP.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 72565A22A1742BFB9BCB9594 /* libPods-APP.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		36CA8C6F4D523096668D4CEC /* libPods-APP.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-APP.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3840EF59D4235423BB8852BE /* Pods-APP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-APP.release.xcconfig"; path = "Pods/Target Support Files/Pods-APP/Pods-APP.release.xcconfig"; sourceTree = "<group>"; };
-		72565A22A1742BFB9BCB9594 /* libPods-APP.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-APP.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3E7A0536B5B503F1D9B317B /* Pods-APP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-APP.debug.xcconfig"; path = "Pods/Target Support Files/Pods-APP/Pods-APP.debug.xcconfig"; sourceTree = "<group>"; };
+		DA02C5B421904C92006B7643 /* MyVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyVC.h; sourceTree = "<group>"; };
+		DA02C5B521904C92006B7643 /* MyVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyVC.m; sourceTree = "<group>"; };
+		DA02C5B721904FE3006B7643 /* APP-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "APP-Bridging-Header.h"; sourceTree = "<group>"; };
+		DA02C5B821904FE3006B7643 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		DAD03F1C218BEFF800B92B8B /* APP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = APP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAD03F1F218BEFF800B92B8B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DAD03F20218BEFF800B92B8B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -186,7 +192,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DAD03F86218C0A8A00B92B8B /* libexidcardios.a in Frameworks */,
-				F7B791BFBE40E8B93E0AAF03 /* libPods-APP.a in Frameworks */,
+				BC0B32ADC2B964E507DED984 /* libPods-APP.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,9 +211,18 @@
 		8194D0A7158F1B31D698ABD4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				72565A22A1742BFB9BCB9594 /* libPods-APP.a */,
+				36CA8C6F4D523096668D4CEC /* libPods-APP.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DA02C5B321904C6A006B7643 /* My */ = {
+			isa = PBXGroup;
+			children = (
+				DA02C5B421904C92006B7643 /* MyVC.h */,
+				DA02C5B521904C92006B7643 /* MyVC.m */,
+			);
+			path = My;
 			sourceTree = "<group>";
 		};
 		DAD03F13218BEFF800B92B8B = {
@@ -236,6 +251,7 @@
 				DAD03F4C218C005100B92B8B /* Lib */,
 				DAD03F39218BF9DA00B92B8B /* BaseClass */,
 				DAD03F36218BF06200B92B8B /* Main */,
+				DA02C5B321904C6A006B7643 /* My */,
 				DAD03F35218BF03300B92B8B /* Other */,
 			);
 			path = APP;
@@ -250,6 +266,8 @@
 				DAD03F2A218BEFF900B92B8B /* LaunchScreen.storyboard */,
 				DAD03F2D218BEFF900B92B8B /* Info.plist */,
 				DAD03F2E218BEFF900B92B8B /* main.m */,
+				DA02C5B821904FE3006B7643 /* File.swift */,
+				DA02C5B721904FE3006B7643 /* APP-Bridging-Header.h */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -565,7 +583,7 @@
 				DAD03F18218BEFF800B92B8B /* Sources */,
 				DAD03F19218BEFF800B92B8B /* Frameworks */,
 				DAD03F1A218BEFF800B92B8B /* Resources */,
-				FFCE91A996AB85C6E81CA8D3 /* [CP] Copy Pods Resources */,
+				26C78E1D3338ED78124352FB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -587,6 +605,7 @@
 				TargetAttributes = {
 					DAD03F1B218BEFF800B92B8B = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1000;
 					};
 				};
 			};
@@ -625,25 +644,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		76088AF46C79668C9DC3457E /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-APP-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		FFCE91A996AB85C6E81CA8D3 /* [CP] Copy Pods Resources */ = {
+		26C78E1D3338ED78124352FB /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -665,6 +666,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-APP/Pods-APP-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		76088AF46C79668C9DC3457E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-APP-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -696,6 +715,7 @@
 				DAD03FE9218C5F8000B92B8B /* UIImage+GY.m in Sources */,
 				DAD03F5B218C0A2E00B92B8B /* GYHUD.m in Sources */,
 				DAD03F7F218C0A8A00B92B8B /* UIAlertController+Extend.m in Sources */,
+				DA02C5B921904FE3006B7643 /* File.swift in Sources */,
 				DAD03FBA218C278200B92B8B /* GYCommon.m in Sources */,
 				DAD03FE2218C3E4A00B92B8B /* UIDevice+GY.m in Sources */,
 				DAD03FD1218C289400B92B8B /* UIScrollView+GY.m in Sources */,
@@ -716,6 +736,7 @@
 				DAD03FBE218C280D00B92B8B /* FMDBManager.m in Sources */,
 				DAD03F8A218C0A8A00B92B8B /* RectManager.m in Sources */,
 				DAD03F99218C0AAF00B92B8B /* HMScannerBorder.m in Sources */,
+				DA02C5B621904C92006B7643 /* MyVC.m in Sources */,
 				DAD03FE6218C434800B92B8B /* CrashManager.m in Sources */,
 				DAD03FCF218C289400B92B8B /* UIView+GY.m in Sources */,
 				DAD03FA8218C20A800B92B8B /* GYAPIError.m in Sources */,
@@ -853,9 +874,14 @@
 			baseConfigurationReference = A3E7A0536B5B503F1D9B317B /* Pods-APP.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 72YZ9S75TT;
 				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/APP/Lib/Charts",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/APP/Header/PrefixHeader.pch";
 				INFOPLIST_FILE = APP/Other/Info.plist;
@@ -870,6 +896,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.APP.Paul;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "APP/Other/APP-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -879,9 +908,14 @@
 			baseConfigurationReference = 3840EF59D4235423BB8852BE /* Pods-APP.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 72YZ9S75TT;
 				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/APP/Lib/Charts",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/APP/Header/PrefixHeader.pch";
 				INFOPLIST_FILE = APP/Other/Info.plist;
@@ -896,6 +930,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.APP.Paul;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "APP/Other/APP-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

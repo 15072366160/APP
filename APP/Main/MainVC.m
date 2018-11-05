@@ -22,6 +22,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.view.backgroundColor = [UIColor black25PercentColor];
+    
     UIImage *img = [UIImage imageGradualVertical:HEX_COLOR(@"f12711") endColor:HEX_COLOR(@"f5af19") size:CGSizeMake(SCREEN_WIDTH, [GYScreen shared].navBarH)];
     [self.navigationController.navigationBar setBackgroundImage:img forBarMetrics:UIBarMetricsDefault];
     self.navigationController.navigationBar.barStyle = UIBarStyleBlack;

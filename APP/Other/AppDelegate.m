@@ -11,6 +11,7 @@
 
 // 微信
 #import "WXApi.h"
+#import "APP-Bridging-Header.h"
 
 @interface AppDelegate ()<WXApiDelegate>
 
@@ -77,7 +78,7 @@
              [dict addValue:@"authorization_code" key:@"grant_type"];
          [GYNetworking requestMode:NetModeGET header:nil url:@"https://api.weixin.qq.com/sns/oauth2/access_token" params:dict success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable data) {
              
-             GYLog(@"请求access的response = %@", data);
+             GYLog(@"请求access的data = %@", data);
              NSDictionary *dict = (NSDictionary *)data;
              [NSUserDefaults addValue:dict[WX_ACCESS_TOKEN] key:WX_ACCESS_TOKEN];
              [NSUserDefaults addValue:dict[WX_OPEN_ID] key:WX_OPEN_ID];

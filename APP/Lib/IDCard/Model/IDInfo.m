@@ -6,7 +6,7 @@
 //  Copyright © 2016年 AN. All rights reserved.
 //
 
-#import "idInfo.h"
+#import "IDInfo.h"
 
 @implementation IDInfo
 
