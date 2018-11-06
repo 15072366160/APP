@@ -43,8 +43,6 @@
     
     self.tabBar.tintColor = HEX_COLOR(@"f12711");
     self.viewControllers = viewControllers;
-    
-    self.selectedIndex = 1;
 }
 
 /*

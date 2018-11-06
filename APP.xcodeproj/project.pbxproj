@@ -10,6 +10,9 @@
 		BC0B32ADC2B964E507DED984 /* libPods-APP.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 36CA8C6F4D523096668D4CEC /* libPods-APP.a */; };
 		DA02C5B621904C92006B7643 /* MyVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DA02C5B521904C92006B7643 /* MyVC.m */; };
 		DA02C5B921904FE3006B7643 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA02C5B821904FE3006B7643 /* File.swift */; };
+		DAA73B4621919E3F004D5611 /* GYAlertVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA73B4521919E3F004D5611 /* GYAlertVC.m */; };
+		DAA73B4921919E61004D5611 /* GYTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA73B4721919E61004D5611 /* GYTransition.m */; };
+		DAA73B4C2191A393004D5611 /* GYNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA73B4B2191A393004D5611 /* GYNavigationController.m */; };
 		DAD03F21218BEFF800B92B8B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD03F20218BEFF800B92B8B /* AppDelegate.m */; };
 		DAD03F24218BEFF800B92B8B /* MainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD03F23218BEFF800B92B8B /* MainVC.m */; };
 		DAD03F29218BEFF900B92B8B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAD03F28218BEFF900B92B8B /* Assets.xcassets */; };
@@ -72,6 +75,12 @@
 		DA02C5B521904C92006B7643 /* MyVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyVC.m; sourceTree = "<group>"; };
 		DA02C5B721904FE3006B7643 /* APP-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "APP-Bridging-Header.h"; sourceTree = "<group>"; };
 		DA02C5B821904FE3006B7643 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		DAA73B4421919E3F004D5611 /* GYAlertVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GYAlertVC.h; sourceTree = "<group>"; };
+		DAA73B4521919E3F004D5611 /* GYAlertVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GYAlertVC.m; sourceTree = "<group>"; };
+		DAA73B4721919E61004D5611 /* GYTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GYTransition.m; sourceTree = "<group>"; };
+		DAA73B4821919E61004D5611 /* GYTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GYTransition.h; sourceTree = "<group>"; };
+		DAA73B4A2191A393004D5611 /* GYNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GYNavigationController.h; sourceTree = "<group>"; };
+		DAA73B4B2191A393004D5611 /* GYNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GYNavigationController.m; sourceTree = "<group>"; };
 		DAD03F1C218BEFF800B92B8B /* APP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = APP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAD03F1F218BEFF800B92B8B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DAD03F20218BEFF800B92B8B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -324,6 +333,12 @@
 				DAD03F4A218BFAC800B92B8B /* BaChildViewController.m */,
 				DAD03FDD218C2AC500B92B8B /* StartUpVC.h */,
 				DAD03FDE218C2AC500B92B8B /* StartUpVC.m */,
+				DAA73B4821919E61004D5611 /* GYTransition.h */,
+				DAA73B4721919E61004D5611 /* GYTransition.m */,
+				DAA73B4421919E3F004D5611 /* GYAlertVC.h */,
+				DAA73B4521919E3F004D5611 /* GYAlertVC.m */,
+				DAA73B4A2191A393004D5611 /* GYNavigationController.h */,
+				DAA73B4B2191A393004D5611 /* GYNavigationController.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -702,6 +717,7 @@
 				DAD03FD5218C289400B92B8B /* UIButton+GY.m in Sources */,
 				DAD03FB3218C220F00B92B8B /* UIViewController+GY.m in Sources */,
 				DAD03F9A218C0AAF00B92B8B /* HMScannerMaskView.m in Sources */,
+				DAA73B4C2191A393004D5611 /* GYNavigationController.m in Sources */,
 				DAD03F82218C0A8A00B92B8B /* IDInfoViewController.m in Sources */,
 				DAD03F89218C0A8A00B92B8B /* LHSIDCardScaningView.m in Sources */,
 				DAD03F2F218BEFF900B92B8B /* main.m in Sources */,
@@ -713,9 +729,11 @@
 				DAD03F21218BEFF800B92B8B /* AppDelegate.m in Sources */,
 				DAD03FD3218C289400B92B8B /* UIBarButtonItem+GY.m in Sources */,
 				DAD03FE9218C5F8000B92B8B /* UIImage+GY.m in Sources */,
+				DAA73B4921919E61004D5611 /* GYTransition.m in Sources */,
 				DAD03F5B218C0A2E00B92B8B /* GYHUD.m in Sources */,
 				DAD03F7F218C0A8A00B92B8B /* UIAlertController+Extend.m in Sources */,
 				DA02C5B921904FE3006B7643 /* File.swift in Sources */,
+				DAA73B4621919E3F004D5611 /* GYAlertVC.m in Sources */,
 				DAD03FBA218C278200B92B8B /* GYCommon.m in Sources */,
 				DAD03FE2218C3E4A00B92B8B /* UIDevice+GY.m in Sources */,
 				DAD03FD1218C289400B92B8B /* UIScrollView+GY.m in Sources */,
