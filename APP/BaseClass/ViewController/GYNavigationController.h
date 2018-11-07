@@ -1,8 +1,8 @@
 //
-//  GYNvigationController.h
+//  GYNavigationController.h
 //  APP
 //
-//  Created by Paul on 2018/11/6.
+//  Created by Paul on 2018/11/7.
 //  Copyright © 2018 Paul. All rights reserved.
 //
 

@@ -1,13 +1,12 @@
 //
-//  GYNvigationController.m
+//  GYNavigationController.m
 //  APP
 //
-//  Created by Paul on 2018/11/6.
+//  Created by Paul on 2018/11/7.
 //  Copyright © 2018 Paul. All rights reserved.
 //
 
 #import "GYNavigationController.h"
-
 
 @interface GYNVC : UINavigationController
 
@@ -31,8 +30,11 @@
     self.view.frame = self.frame;
 }
 
-@end
+- (void)dealloc{
+    NSLog(@"%@ 已经销毁",NSStringFromClass([self class]));
+}
 
+@end
 
 
 @interface GYNavigationController ()
@@ -57,7 +59,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    [self.view addSubview:self.nvc.view];
+    
 }
 
 

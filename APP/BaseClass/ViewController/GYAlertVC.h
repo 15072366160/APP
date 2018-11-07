@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface GYAlertVC : UIViewController
 
 /**
- 是否有毛玻璃效果
+ 是否有毛玻璃效果 默认是true
  */
 @property (nonatomic,assign) BOOL isBlur;
 

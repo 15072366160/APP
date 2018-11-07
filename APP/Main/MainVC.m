@@ -12,6 +12,7 @@
 #import "WXApi.h"
 #import "WXApiObject.h"
 
+
 #import "GYNavigationController.h"
 
 @interface MainVC ()
@@ -48,9 +49,11 @@
 
 - (void)test{
     
-//    MainVC *vc = [[MainVC alloc] init];
-//    GYNavigationController *nvc = [[GYNavigationController alloc] initWithRootViewController:vc option:(GYOptionsMode)option frame:(CGRect)frame];
-    
+    UIViewController *vc = [[UIViewController alloc] init];
+    vc.view.backgroundColor = [UIColor redColor];
+    GYNavigationController *nvc = [[GYNavigationController alloc] initWithRootViewController:vc option:GYOptionsModeCrossDissolve frame:CGRectMake(20, 300, SCREEN_WIDTH - 40, 200)];
+    nvc.isDismiss = true;
+    [self presentViewController:nvc animated:true completion:nil];
 }
 
 - (void)dealloc{
