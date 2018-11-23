@@ -12,8 +12,7 @@
 #import "WXApi.h"
 #import "WXApiObject.h"
 
-
-#import "GYNavigationController.h"
+#import "GYTableViewController.h"
 
 @interface MainVC ()
 
@@ -49,11 +48,9 @@
 
 - (void)test{
     
-    UIViewController *vc = [[UIViewController alloc] init];
-    vc.view.backgroundColor = [UIColor redColor];
-    GYNavigationController *nvc = [[GYNavigationController alloc] initWithRootViewController:vc option:GYOptionsModeCrossDissolve frame:CGRectMake(20, 300, SCREEN_WIDTH - 40, 200)];
-    nvc.isDismiss = true;
-    [self presentViewController:nvc animated:true completion:nil];
+    GYTableViewController *vc = [[GYTableViewController alloc] initWithStyle:UITableViewStylePlain];
+    vc.hidesBottomBarWhenPushed = true;
+    [self push:vc];
 }
 
 - (void)dealloc{
