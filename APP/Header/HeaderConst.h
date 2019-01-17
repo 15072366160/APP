@@ -9,22 +9,39 @@
 #ifndef HeaderConst_h
 #define HeaderConst_h
 
-// 微信
-static NSString *const AppID = @"";
-static NSString *const AppSecret = @"";
-
-// WX_ACCESS_TOKEN
-static NSString  *const WX_ACCESS_TOKEN         = @"access_token";
-// WX_OPEN_ID
-static NSString  *const WX_OPEN_ID              = @"openid";
-// WX_REFRESH_TOKEN
-static NSString  *const WX_REFRESH_TOKEN        = @"refresh_token";
-
-// WX_OPEN_ID
 static NSString  *const BackIMG_Gray            = @"BackIMG_Gray";
 
-// NOTI_WX_LOGIN
-static NSString  *const NOTI_WX_LOGIN           = @"NOTI_WX_LOGIN";
+// 数据库
+static NSString *const VideoListTable     = @"VideoListTable"; // 视频表
+static NSString *const VideoID            = @"id";
+static NSString *const VideoName          = @"VideoName";
+static NSString *const VideoPath          = @"VideoPath";
+static NSString *const VideoTime          = @"VideoTime";
+static NSString *const VideoDuration      = @"VideoDuration";
+
+static NSString *const PhotoListTable     = @"PhotoListTable"; // 相册
+static NSString *const PhotoID            = @"id";
+static NSString *const PhotoName          = @"PhotoName";
+static NSString *const PhotoPath          = @"PhotoPath";
+static NSString *const PhotoTime          = @"PhotoTime";
+
+// 通知
+static NSString *const NotiInsertVideoFromOtherApp    = @"NotiInsertVideoFromOtherApp"; // 添加视频
+static NSString *const NotiSaveVideoToLocationApp     = @"NotiSaveVideoToLocationApp"; // 添加视频到本APP
+
+static NSString *const VideoUrlString     = @"VideoUrlString"; // 视频 UrlString
+static NSString *const VideoUrl           = @"VideoUrl"; // 视频URL
+
+static NSString *const NotiInsertPhotoFromOtherApp    = @"NotiInsertPhotoFromOtherApp"; // 添加照片
+static NSString *const NotiSavePhotoToLocationApp     = @"NotiSavePhotoToLocationApp"; // 添加照片到本APP
+static NSString *const PhotoUrl                       = @"PhotoUrl"; // 照片URL
+
+// 是否第一次启动APP
+static NSString *const APPIsFirst                     = @"APPIsFirst";
+// 密码
+static NSString *const APPPassword                    = @"APPPassword";
+// 密码模式
+static NSString *const AppStarType                    = @"AppStarType";
 
 
 #endif /* HeaderConst_h */

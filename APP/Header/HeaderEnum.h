@@ -12,12 +12,10 @@
 #import <Foundation/Foundation.h>
 
 #pragma mark -- 支付方式
-typedef NS_ENUM(NSUInteger, PayMode) {
-    PayModeApple = 0,   // 苹果支付
-    PayModeAliPay,      // 支付宝支付
-    PayModeWeChatPay,   // 微信支付
-    PayModeUnionPay,    // 银联支付
-    PayModeQQPay        // QQ钱包支付
+typedef NS_ENUM(NSUInteger, AppStarMode) {
+    AppStarModeLaunching = 0,   // 激活
+    AppStarModeActive,         // 前台
+    AppStarModeNerve,          // 永不
 };
 
 #endif /* HeaderEnum.h */

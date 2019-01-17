@@ -350,4 +350,21 @@ static NSString *const SIGNSALT = @"iXPQmHzJDamYJqag";
     }
 }
 
++ (void)requestJSWithUrl:(NSString *)url params:(NSDictionary *)params success:(void (^)(NSURLSessionDataTask * _Nonnull task, id _Nullable data))success failure:(void (^)(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error))failure{
+    
+    //开始请求数据
+    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+    
+    AFHTTPRequestSerializer *requset = [AFHTTPRequestSerializer serializer];
+    requset.stringEncoding = NSUTF8StringEncoding;
+    requset.timeoutInterval = 5.0;
+    manager.requestSerializer = requset;
+    
+    AFHTTPResponseSerializer *response = [AFHTTPResponseSerializer serializer];
+    response.acceptableContentTypes = [NSSet setWithObjects:@"application/json", @"text/html", @"image/jpeg", @"image/png", @"application/octet-stream", @"text/json",@"text/plain", @"text/javascript", nil];
+    manager.responseSerializer = response;
+    
+    [manager GET:url parameters:params progress:nil success:success failure:failure];
+}
+
 @end

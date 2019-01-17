@@ -1,1 +1,1 @@
-../../../ZFPlayer/ZFPlayer/Classes/Core/ZFPlayer.h
+../../../ZFPlayer/ZFPlayer/ZFPlayer.h

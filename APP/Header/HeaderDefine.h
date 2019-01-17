@@ -60,6 +60,9 @@
 // build版本
 #define APP_BUILD                 [APP_INFO objectForKey:@"CFBundleVersion"]
 
+// 视频路径
+#define DocumentVideoPath                 NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, true).firstObject
+
 #endif /* HeaderDefine_h */
 
 

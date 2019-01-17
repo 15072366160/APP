@@ -82,4 +82,7 @@ typedef NS_ENUM(NSUInteger) {
  */
 + (void)sendFile:(NSData *)file url:(NSString *)url params:(NSDictionary *)params result:(ResultBlock)result;
 
+// 直接请求
++ (void)requestJSWithUrl:(NSString *)url params:(NSDictionary *)params success:(void (^)(NSURLSessionDataTask * _Nonnull task, id _Nullable data))success failure:(void (^)(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error))failure;
+
 @end

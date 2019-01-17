@@ -12,15 +12,14 @@
 #import "HeaderDebug.h"
 // 第三方
 #import "JKCategories.h"
-#import "YYText.h"
+//#import "YYText.h"
 #import "Singleton.h"
 #import "MJExtension.h"
 #import <Masonry/Masonry.h>
 #import "MJRefresh.h"
-#import "Colours.h"
+//#import "Colours.h"
 #import "KSPhotoBrowser.h"
-#import "UIImageView+WebCache.h"
-#import "QBPopupMenu.h"
+//#import "UIImageView+WebCache.h"
 
 // Header
 #import "HeaderGategory.h"

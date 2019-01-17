@@ -23,7 +23,7 @@ static FMDBManager *instance;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         instance = [[self alloc] init];
-        NSString *path = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, true).firstObject stringByAppendingString:@"/fmdb.sqlite"];
+        NSString *path = [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, true).firstObject stringByAppendingString:@"/fmdb.sqlite"];
         GYLog(@"%@",path);
         instance.db = [[FMDatabase alloc] initWithPath:path];
     });

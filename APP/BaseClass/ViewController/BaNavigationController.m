@@ -14,19 +14,34 @@
 
 @implementation BaNavigationController
 
+- (instancetype)initWithRootViewController:(UIViewController *)rootViewController
+{
+    self = [super initWithRootViewController:rootViewController];
+    if (self) {
+        self.modalPresentationStyle = UIModalPresentationCustom;
+        self.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
+    }
+    return self;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    UIImage *img = [UIImage imageGradualOblique:HEX_COLOR(@"#02AAB0") endColor:HEX_COLOR(@"#00CDAC") size:CGSizeMake(SCREEN_WIDTH, [GYScreen shared].navBarH)];
+    [self.navigationBar setBackgroundImage:img forBarMetrics:UIBarMetricsDefault];
+    self.navigationBar.barStyle = UIBarStyleBlack;
+    self.navigationBar.tintColor = WHITE_COLOR;
+    
+    self.navigationController.interactivePopGestureRecognizer.enabled = YES;
+    
+//    [self skidBack];
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)skidBack{
+    //设置侧滑返回上一页
+    if ([self respondsToSelector:@selector(interactivePopGestureRecognizer)]) {
+        self.interactivePopGestureRecognizer.delegate = nil;
+    }
 }
-*/
 
 @end

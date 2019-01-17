@@ -14,34 +14,18 @@ PODS:
   - AFNetworking/Serialization (3.2.1)
   - AFNetworking/UIKit (3.2.1):
     - AFNetworking/NSURLSession
-  - Bugly (2.5.0)
-  - Colours (5.13.0):
-    - Colours/ObjC (= 5.13.0)
-  - Colours/ObjC (5.13.0)
   - FLAnimatedImage (1.0.12)
   - FMDB (2.7.2):
     - FMDB/standard (= 2.7.2)
   - FMDB/standard (2.7.2)
-  - HJTabViewController (1.0.6)
-  - HXWeiboPhotoPicker (2.1.5):
-    - SDWebImage (~> 4.0)
-  - IQKeyboardManager (6.1.1)
-  - JCore (1.2.2)
   - JKCategories (1.7)
-  - JPush (3.1.0):
-    - JCore (~> 1.2.0)
-  - JYHHHorizontalPagingView (1.2.1)
   - KSPhotoBrowser (0.2.3):
     - FLAnimatedImage (~> 1.0)
     - SDWebImage (~> 4.0)
     - SDWebImage/GIF
-  - lottie-ios (2.5.0)
   - Masonry (1.1.0)
   - MJExtension (3.0.15.1)
   - MJRefresh (3.1.15.6)
-  - Popover.OC (2.2)
-  - QBPopupMenu (2.0)
-  - SDAutoLayout (2.2.1)
   - SDCycleScrollView (1.75):
     - SDWebImage (>= 4.0.0)
   - SDWebImage (4.4.2):
@@ -51,99 +35,50 @@ PODS:
     - FLAnimatedImage (~> 1.0)
     - SDWebImage/Core
   - SVProgressHUD (2.2.5)
-  - WechatOpenSDK (1.8.2)
-  - WMPageController (2.5.2)
-  - YYText (1.0.7)
-  - ZFPlayer (3.1.6):
-    - ZFPlayer/Core (= 3.1.6)
-  - ZFPlayer/Core (3.1.6)
+  - ZFPlayer (2.1.6):
+    - Masonry
 
 DEPENDENCIES:
   - AFNetworking (~> 3.2.1)
-  - Bugly (~> 2.5.0)
-  - Colours (~> 5.13.0)
   - FMDB (~> 2.7.2)
-  - HJTabViewController (~> 1.0.6)
-  - HXWeiboPhotoPicker (~> 2.1.5)
-  - IQKeyboardManager (~> 6.1.1)
   - JKCategories (~> 1.7)
-  - JPush (~> 3.1.0)
-  - JYHHHorizontalPagingView (~> 1.2.1)
   - KSPhotoBrowser (~> 0.2.3)
-  - lottie-ios (~> 2.5.0)
   - Masonry (~> 1.1.0)
   - MJExtension (~> 3.0.15.1)
   - MJRefresh (~> 3.1.15.6)
-  - Popover.OC (~> 2.2)
-  - QBPopupMenu (~> 2.0)
-  - SDAutoLayout (~> 2.2.1)
   - SDCycleScrollView (~> 1.75)
-  - SDWebImage (~> 4.4.2)
   - SVProgressHUD (~> 2.2.5)
-  - WechatOpenSDK (~> 1.8.2)
-  - WMPageController (~> 2.5.2)
-  - YYText (~> 1.0.7)
-  - ZFPlayer (~> 3.1.6)
+  - ZFPlayer (~> 2.1.5)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - AFNetworking
-    - Bugly
-    - Colours
     - FLAnimatedImage
     - FMDB
-    - HJTabViewController
-    - HXWeiboPhotoPicker
-    - IQKeyboardManager
-    - JCore
     - JKCategories
-    - JPush
-    - JYHHHorizontalPagingView
     - KSPhotoBrowser
-    - lottie-ios
     - Masonry
     - MJExtension
     - MJRefresh
-    - Popover.OC
-    - QBPopupMenu
-    - SDAutoLayout
     - SDCycleScrollView
     - SDWebImage
     - SVProgressHUD
-    - WechatOpenSDK
-    - WMPageController
-    - YYText
     - ZFPlayer
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
-  Bugly: 3ca9f255c01025582df26f9222893b383c7e4b4e
-  Colours: f24220c38f13deac88612667e9b4a7fb96b871d4
   FLAnimatedImage: 4a0b56255d9b05f18b6dd7ee06871be5d3b89e31
   FMDB: 6198a90e7b6900cfc046e6bc0ef6ebb7be9236aa
-  HJTabViewController: 578a5bbab471587e7cc49a2f0f49fc8601c833bf
-  HXWeiboPhotoPicker: b389ed6a2f854270aa391c55591d0616a519c881
-  IQKeyboardManager: 79c57795f5c2408d259d37b9da2ed07efcbb5225
-  JCore: f14c0549968a63c22e246a4875aa9d428446f373
   JKCategories: 5136d903ed6a17e700cac984db9fc9dcfaad2954
-  JPush: 5921e25ad13e0386351079217b009f2039084eac
-  JYHHHorizontalPagingView: ce25c2f6ab824d20e97dd78c3bbdd3f256a209f2
   KSPhotoBrowser: 222459c4158399d14b2a2e6538c4bc18ed901ba1
-  lottie-ios: d699fdee68d7b63e721d949388b015fef1aaa4ac
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MJExtension: 19bc33ce2eee2d319760f5622562cf581a6ff756
   MJRefresh: 0efa19656679d70a0f47cbe76e56c2271fe53a97
-  Popover.OC: bfcce8307f77593e1e1d7cf58604077f74e114bc
-  QBPopupMenu: e370cbc7ad8a8d09afe1726117aa18f92696f66a
-  SDAutoLayout: 8bf6b3bbc8b01f775d4defbb4fda2ace805461be
   SDCycleScrollView: 884b88f0266dd4708a0e1934975c69cb971707b1
   SDWebImage: 624d6e296c69b244bcede364c72ae0430ac14681
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
-  WechatOpenSDK: 676feec516a11173eafd1fe64b10d27babf28701
-  WMPageController: 0c7624d2b48e4f1ab92371688cf6744ed701575d
-  YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
-  ZFPlayer: bac23889b25e83fd3644ec40c8e7e9622e331ecb
+  ZFPlayer: 833cb3974b619bfd01a0ec1ebaabfe6f629e85b4
 
-PODFILE CHECKSUM: 35be3a9aa062873752e720ae9bd0aacb12f18ad8
+PODFILE CHECKSUM: 027839bc0e9e028f46e37c4f608db911a29ae747
 
 COCOAPODS: 1.5.3

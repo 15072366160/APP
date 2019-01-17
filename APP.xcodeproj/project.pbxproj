@@ -10,8 +10,14 @@
 		BC0B32ADC2B964E507DED984 /* libPods-APP.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 36CA8C6F4D523096668D4CEC /* libPods-APP.a */; };
 		DA02C5B621904C92006B7643 /* MyVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DA02C5B521904C92006B7643 /* MyVC.m */; };
 		DA02C5B921904FE3006B7643 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA02C5B821904FE3006B7643 /* File.swift */; };
-		DA160709219EAA4800A71F71 /* GYTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA160708219EAA4800A71F71 /* GYTableViewController.m */; };
-		DA16070C219EAAB400A71F71 /* GYTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DA16070B219EAAB400A71F71 /* GYTableViewCell.m */; };
+		DA0F6E9921F081BA00C089BA /* Aspects.m in Sources */ = {isa = PBXBuildFile; fileRef = DA0F6E9121F081BA00C089BA /* Aspects.m */; };
+		DA0F6E9A21F081BA00C089BA /* NSInvocation+LYAddtion.m in Sources */ = {isa = PBXBuildFile; fileRef = DA0F6E9421F081BA00C089BA /* NSInvocation+LYAddtion.m */; };
+		DA0F6E9B21F081BA00C089BA /* LYComAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = DA0F6E9521F081BA00C089BA /* LYComAPI.m */; };
+		DA0F6E9C21F081BA00C089BA /* LYFix.m in Sources */ = {isa = PBXBuildFile; fileRef = DA0F6E9821F081BA00C089BA /* LYFix.m */; };
+		DA150E9921AFE3EC0054453E /* MaPhotosVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DA150E9721AFE3EC0054453E /* MaPhotosVC.m */; };
+		DA150E9D21AFE4DB0054453E /* MaPhotosModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DA150E9C21AFE4DB0054453E /* MaPhotosModel.m */; };
+		DA150EA021AFE7580054453E /* MaPhotosItem.m in Sources */ = {isa = PBXBuildFile; fileRef = DA150E9F21AFE7580054453E /* MaPhotosItem.m */; };
+		DA1B249221B12120008E1E86 /* MaSetVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DA1B249021B12120008E1E86 /* MaSetVC.m */; };
 		DAD03F21218BEFF800B92B8B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD03F20218BEFF800B92B8B /* AppDelegate.m */; };
 		DAD03F24218BEFF800B92B8B /* MainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD03F23218BEFF800B92B8B /* MainVC.m */; };
 		DAD03F29218BEFF900B92B8B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAD03F28218BEFF900B92B8B /* Assets.xcassets */; };
@@ -64,6 +70,10 @@
 		DAD03FE2218C3E4A00B92B8B /* UIDevice+GY.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD03FE1218C3E4A00B92B8B /* UIDevice+GY.m */; };
 		DAD03FE6218C434800B92B8B /* CrashManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD03FE4218C434800B92B8B /* CrashManager.m */; };
 		DAD03FE9218C5F8000B92B8B /* UIImage+GY.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD03FE8218C5F8000B92B8B /* UIImage+GY.m */; };
+		DADC893721AE6B5700E7ED0E /* libstdc++.6.0.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = DADC893521AE538900E7ED0E /* libstdc++.6.0.9.tbd */; };
+		DADC893D21AE6F7000E7ED0E /* MaVideoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DADC893C21AE6F7000E7ED0E /* MaVideoModel.m */; };
+		DADC894021AE70CC00E7ED0E /* MaVideoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DADC893F21AE70CC00E7ED0E /* MaVideoCell.m */; };
+		DADC894621AE99E800E7ED0E /* MaLocationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DADC894421AE99E800E7ED0E /* MaLocationVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -74,10 +84,22 @@
 		DA02C5B521904C92006B7643 /* MyVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyVC.m; sourceTree = "<group>"; };
 		DA02C5B721904FE3006B7643 /* APP-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "APP-Bridging-Header.h"; sourceTree = "<group>"; };
 		DA02C5B821904FE3006B7643 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
-		DA160707219EAA4800A71F71 /* GYTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GYTableViewController.h; sourceTree = "<group>"; };
-		DA160708219EAA4800A71F71 /* GYTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GYTableViewController.m; sourceTree = "<group>"; };
-		DA16070A219EAAB400A71F71 /* GYTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GYTableViewCell.h; sourceTree = "<group>"; };
-		DA16070B219EAAB400A71F71 /* GYTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GYTableViewCell.m; sourceTree = "<group>"; };
+		DA0F6E9021F081BA00C089BA /* Aspects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Aspects.h; sourceTree = "<group>"; };
+		DA0F6E9121F081BA00C089BA /* Aspects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Aspects.m; sourceTree = "<group>"; };
+		DA0F6E9321F081BA00C089BA /* LYComAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYComAPI.h; sourceTree = "<group>"; };
+		DA0F6E9421F081BA00C089BA /* NSInvocation+LYAddtion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSInvocation+LYAddtion.m"; sourceTree = "<group>"; };
+		DA0F6E9521F081BA00C089BA /* LYComAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYComAPI.m; sourceTree = "<group>"; };
+		DA0F6E9621F081BA00C089BA /* NSInvocation+LYAddtion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSInvocation+LYAddtion.h"; sourceTree = "<group>"; };
+		DA0F6E9721F081BA00C089BA /* LYFix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYFix.h; sourceTree = "<group>"; };
+		DA0F6E9821F081BA00C089BA /* LYFix.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYFix.m; sourceTree = "<group>"; };
+		DA150E9621AFE3EC0054453E /* MaPhotosVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MaPhotosVC.h; sourceTree = "<group>"; };
+		DA150E9721AFE3EC0054453E /* MaPhotosVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MaPhotosVC.m; sourceTree = "<group>"; };
+		DA150E9B21AFE4DB0054453E /* MaPhotosModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MaPhotosModel.h; sourceTree = "<group>"; };
+		DA150E9C21AFE4DB0054453E /* MaPhotosModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MaPhotosModel.m; sourceTree = "<group>"; };
+		DA150E9E21AFE7580054453E /* MaPhotosItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MaPhotosItem.h; sourceTree = "<group>"; };
+		DA150E9F21AFE7580054453E /* MaPhotosItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MaPhotosItem.m; sourceTree = "<group>"; };
+		DA1B248F21B12120008E1E86 /* MaSetVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MaSetVC.h; sourceTree = "<group>"; };
+		DA1B249021B12120008E1E86 /* MaSetVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MaSetVC.m; sourceTree = "<group>"; };
 		DAD03F1C218BEFF800B92B8B /* APP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = APP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAD03F1F218BEFF800B92B8B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DAD03F20218BEFF800B92B8B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -190,6 +212,13 @@
 		DAD03FE5218C434800B92B8B /* CrashManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrashManager.h; sourceTree = "<group>"; };
 		DAD03FE7218C5F8000B92B8B /* UIImage+GY.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+GY.h"; sourceTree = "<group>"; };
 		DAD03FE8218C5F8000B92B8B /* UIImage+GY.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+GY.m"; sourceTree = "<group>"; };
+		DADC893521AE538900E7ED0E /* libstdc++.6.0.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.0.9.tbd"; path = "usr/lib/libstdc++.6.0.9.tbd"; sourceTree = SDKROOT; };
+		DADC893B21AE6F7000E7ED0E /* MaVideoModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MaVideoModel.h; sourceTree = "<group>"; };
+		DADC893C21AE6F7000E7ED0E /* MaVideoModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MaVideoModel.m; sourceTree = "<group>"; };
+		DADC893E21AE70CC00E7ED0E /* MaVideoCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MaVideoCell.h; sourceTree = "<group>"; };
+		DADC893F21AE70CC00E7ED0E /* MaVideoCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MaVideoCell.m; sourceTree = "<group>"; };
+		DADC894321AE99E800E7ED0E /* MaLocationVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MaLocationVC.h; sourceTree = "<group>"; };
+		DADC894421AE99E800E7ED0E /* MaLocationVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MaLocationVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -197,6 +226,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DADC893721AE6B5700E7ED0E /* libstdc++.6.0.9.tbd in Frameworks */,
 				DAD03F86218C0A8A00B92B8B /* libexidcardios.a in Frameworks */,
 				BC0B32ADC2B964E507DED984 /* libPods-APP.a in Frameworks */,
 			);
@@ -217,6 +247,7 @@
 		8194D0A7158F1B31D698ABD4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DADC893521AE538900E7ED0E /* libstdc++.6.0.9.tbd */,
 				36CA8C6F4D523096668D4CEC /* libPods-APP.a */,
 			);
 			name = Frameworks;
@@ -227,8 +258,41 @@
 			children = (
 				DA02C5B421904C92006B7643 /* MyVC.h */,
 				DA02C5B521904C92006B7643 /* MyVC.m */,
+				DA1B248F21B12120008E1E86 /* MaSetVC.h */,
+				DA1B249021B12120008E1E86 /* MaSetVC.m */,
 			);
 			path = My;
+			sourceTree = "<group>";
+		};
+		DA0F6E8E21F081BA00C089BA /* LYFix */ = {
+			isa = PBXGroup;
+			children = (
+				DA0F6E8F21F081BA00C089BA /* AspectsFix */,
+				DA0F6E9221F081BA00C089BA /* Category */,
+				DA0F6E9721F081BA00C089BA /* LYFix.h */,
+				DA0F6E9821F081BA00C089BA /* LYFix.m */,
+			);
+			path = LYFix;
+			sourceTree = "<group>";
+		};
+		DA0F6E8F21F081BA00C089BA /* AspectsFix */ = {
+			isa = PBXGroup;
+			children = (
+				DA0F6E9021F081BA00C089BA /* Aspects.h */,
+				DA0F6E9121F081BA00C089BA /* Aspects.m */,
+			);
+			path = AspectsFix;
+			sourceTree = "<group>";
+		};
+		DA0F6E9221F081BA00C089BA /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				DA0F6E9321F081BA00C089BA /* LYComAPI.h */,
+				DA0F6E9421F081BA00C089BA /* NSInvocation+LYAddtion.m */,
+				DA0F6E9521F081BA00C089BA /* LYComAPI.m */,
+				DA0F6E9621F081BA00C089BA /* NSInvocation+LYAddtion.h */,
+			);
+			path = Category;
 			sourceTree = "<group>";
 		};
 		DAD03F13218BEFF800B92B8B = {
@@ -281,12 +345,9 @@
 		DAD03F36218BF06200B92B8B /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				DAD03F22218BEFF800B92B8B /* MainVC.h */,
-				DAD03F23218BEFF800B92B8B /* MainVC.m */,
-				DA160707219EAA4800A71F71 /* GYTableViewController.h */,
-				DA160708219EAA4800A71F71 /* GYTableViewController.m */,
-				DA16070A219EAAB400A71F71 /* GYTableViewCell.h */,
-				DA16070B219EAAB400A71F71 /* GYTableViewCell.m */,
+				DADC893821AE6F2F00E7ED0E /* Model */,
+				DADC893A21AE6F3D00E7ED0E /* View */,
+				DADC893921AE6F3500E7ED0E /* ViewController */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -342,6 +403,7 @@
 			isa = PBXGroup;
 			children = (
 				DAD03F5C218C0A5000B92B8B /* Singleton.h */,
+				DA0F6E8E21F081BA00C089BA /* LYFix */,
 				DAD03FE3218C434800B92B8B /* CrashManager */,
 				DAD03FBB218C27F900B92B8B /* FMDB */,
 				DAD03FA0218C206600B92B8B /* GYNetworking */,
@@ -582,6 +644,41 @@
 			path = CrashManager;
 			sourceTree = "<group>";
 		};
+		DADC893821AE6F2F00E7ED0E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DADC893B21AE6F7000E7ED0E /* MaVideoModel.h */,
+				DADC893C21AE6F7000E7ED0E /* MaVideoModel.m */,
+				DA150E9B21AFE4DB0054453E /* MaPhotosModel.h */,
+				DA150E9C21AFE4DB0054453E /* MaPhotosModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DADC893921AE6F3500E7ED0E /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				DAD03F22218BEFF800B92B8B /* MainVC.h */,
+				DAD03F23218BEFF800B92B8B /* MainVC.m */,
+				DADC894321AE99E800E7ED0E /* MaLocationVC.h */,
+				DADC894421AE99E800E7ED0E /* MaLocationVC.m */,
+				DA150E9621AFE3EC0054453E /* MaPhotosVC.h */,
+				DA150E9721AFE3EC0054453E /* MaPhotosVC.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		DADC893A21AE6F3D00E7ED0E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DADC893E21AE70CC00E7ED0E /* MaVideoCell.h */,
+				DADC893F21AE70CC00E7ED0E /* MaVideoCell.m */,
+				DA150E9E21AFE7580054453E /* MaPhotosItem.h */,
+				DA150E9F21AFE7580054453E /* MaPhotosItem.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -661,17 +758,15 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-APP/Pods-APP-resources.sh",
-				"${PODS_ROOT}/HXWeiboPhotoPicker/微博照片选择/HXWeiboPhotoPicker/HXWeiboPhotoPicker.bundle",
-				"${PODS_ROOT}/IQKeyboardManager/IQKeyboardManager/Resources/IQKeyboardManager.bundle",
 				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
 				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
+				"${PODS_ROOT}/ZFPlayer/ZFPlayer/ZFPlayer.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/HXWeiboPhotoPicker.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/IQKeyboardManager.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVProgressHUD.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ZFPlayer.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -710,13 +805,16 @@
 				DAD03FDF218C2AC500B92B8B /* StartUpVC.m in Sources */,
 				DAD03F48218BFA9600B92B8B /* BaViewController.m in Sources */,
 				DAD03FD5218C289400B92B8B /* UIButton+GY.m in Sources */,
+				DADC894621AE99E800E7ED0E /* MaLocationVC.m in Sources */,
 				DAD03FB3218C220F00B92B8B /* UIViewController+GY.m in Sources */,
+				DA150E9921AFE3EC0054453E /* MaPhotosVC.m in Sources */,
 				DAD03F9A218C0AAF00B92B8B /* HMScannerMaskView.m in Sources */,
 				DAD03F82218C0A8A00B92B8B /* IDInfoViewController.m in Sources */,
 				DAD03F89218C0A8A00B92B8B /* LHSIDCardScaningView.m in Sources */,
 				DAD03F2F218BEFF900B92B8B /* main.m in Sources */,
 				DAD03FB4218C220F00B92B8B /* UIAlertController+TT.m in Sources */,
 				DAD03F9E218C0AAF00B92B8B /* HMScanerCardViewController.m in Sources */,
+				DA0F6E9C21F081BA00C089BA /* LYFix.m in Sources */,
 				DAD03FD9218C29D800B92B8B /* NSUserDefaults+Category.m in Sources */,
 				DAD03F83218C0A8A00B92B8B /* AVCaptureViewController.m in Sources */,
 				DAD03F3F218BFA3D00B92B8B /* BaTabBarController.m in Sources */,
@@ -726,23 +824,28 @@
 				DAD03F5B218C0A2E00B92B8B /* GYHUD.m in Sources */,
 				DAD03F7F218C0A8A00B92B8B /* UIAlertController+Extend.m in Sources */,
 				DA02C5B921904FE3006B7643 /* File.swift in Sources */,
+				DA0F6E9A21F081BA00C089BA /* NSInvocation+LYAddtion.m in Sources */,
 				DAD03FBA218C278200B92B8B /* GYCommon.m in Sources */,
-				DA16070C219EAAB400A71F71 /* GYTableViewCell.m in Sources */,
 				DAD03FE2218C3E4A00B92B8B /* UIDevice+GY.m in Sources */,
-				DA160709219EAA4800A71F71 /* GYTableViewController.m in Sources */,
 				DAD03FD1218C289400B92B8B /* UIScrollView+GY.m in Sources */,
 				DAD03F60218C0A7300B92B8B /* GYPopverVC.m in Sources */,
 				DAD03FAA218C20A800B92B8B /* GYNetworking+API.m in Sources */,
 				DAD03F88218C0A8A00B92B8B /* IDInfo.m in Sources */,
 				DAD03FA9218C20A800B92B8B /* GYNetworking.m in Sources */,
+				DA0F6E9B21F081BA00C089BA /* LYComAPI.m in Sources */,
 				DAD03F45218BFA7C00B92B8B /* BaRootViewController.m in Sources */,
+				DA150EA021AFE7580054453E /* MaPhotosItem.m in Sources */,
+				DADC893D21AE6F7000E7ED0E /* MaVideoModel.m in Sources */,
 				DAD03FDC218C29FF00B92B8B /* NSMutableDictionary+Gategary.m in Sources */,
 				DAD03F80218C0A8A00B92B8B /* UIImage+Extend.m in Sources */,
 				DAD03FD2218C289400B92B8B /* UICollectionView+GY.m in Sources */,
 				DAD03FB9218C278200B92B8B /* GYScreen.m in Sources */,
+				DA150E9D21AFE4DB0054453E /* MaPhotosModel.m in Sources */,
+				DA0F6E9921F081BA00C089BA /* Aspects.m in Sources */,
 				DAD03F84218C0A8A00B92B8B /* IDAuthViewController.m in Sources */,
 				DAD03FD4218C289400B92B8B /* UITableView+GY.m in Sources */,
 				DAD03F9F218C0AAF00B92B8B /* HMScannerController.m in Sources */,
+				DA1B249221B12120008E1E86 /* MaSetVC.m in Sources */,
 				DAD03F9B218C0AAF00B92B8B /* HMScannerViewController.m in Sources */,
 				DAD03F9C218C0AAF00B92B8B /* HMScanner.m in Sources */,
 				DAD03FBE218C280D00B92B8B /* FMDBManager.m in Sources */,
@@ -752,6 +855,7 @@
 				DAD03FE6218C434800B92B8B /* CrashManager.m in Sources */,
 				DAD03FCF218C289400B92B8B /* UIView+GY.m in Sources */,
 				DAD03FA8218C20A800B92B8B /* GYAPIError.m in Sources */,
+				DADC894021AE70CC00E7ED0E /* MaVideoCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -890,10 +994,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 72YZ9S75TT;
 				ENABLE_BITCODE = NO;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/APP/Lib/Charts",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/APP/Header/PrefixHeader.pch";
 				INFOPLIST_FILE = APP/Other/Info.plist;
@@ -906,12 +1007,12 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/APP/Lib/IDCard/libexidcard",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.APP.Paul;
+				PRODUCT_BUNDLE_IDENTIFIER = com.PPPlayer.Paul;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "APP/Other/APP-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -924,10 +1025,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 72YZ9S75TT;
 				ENABLE_BITCODE = NO;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/APP/Lib/Charts",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/APP/Header/PrefixHeader.pch";
 				INFOPLIST_FILE = APP/Other/Info.plist;
@@ -940,11 +1038,11 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/APP/Lib/IDCard/libexidcard",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.APP.Paul;
+				PRODUCT_BUNDLE_IDENTIFIER = com.PPPlayer.Paul;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "APP/Other/APP-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
